@@ -1,0 +1,49 @@
+body {
+    margin: 0;
+    min-height: 100vh; /* پر کردن تمام ارتفاع صفحه */
+    display: flex;
+    flex-direction: column;  /* چینش عمودی کل صفحه */
+    align-items: center;     /* افقی در مرکز */
+    justify-content: center; /* عمودی در مرکز */
+    text-align: center;
+}
+
+.container {
+    display: felx;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.result {
+    display: inline-block;
+    flex: 1 1 250px;
+    text-align: center;
+}
+
+#yourimg, #computerimg {
+    border-radius: 50%;
+    width: 200px;
+    max-width: 90%;
+    border: 2px solid black;
+}
+
+#buttons {
+    margin-top: 20px;
+}
+
+button {
+    margin: 5px;
+    padding: 8px 15px;
+    font-size: 16px;
+    border-radius: 8px;
+
+}
+
+
+@media (max-width: 768px) {
+    .container {
+        flex-direction: column;
+        align-items: center;
+    }
+}

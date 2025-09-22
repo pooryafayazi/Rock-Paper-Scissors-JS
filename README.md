@@ -1,15 +1,40 @@
-# Rock-Paper-Scissors-JS
-A simple Rock Paper Scissors game built with vanilla JavaScript, HTML, and CSS
+# Rock Paper Scissors (Vanilla JS)
 
-
-### Game Start / Reset
-When the game starts or after pressing the **RESET** button, the interface looks like this:
-  
-![Game Start](./img/Start.png)
+A simple **Rock–Paper–Scissors** game built with **HTML, CSS, and JavaScript**.  
+This is a browser-based mini project for practicing DOM manipulation, state handling, and UI design.
 
 ---
 
-### During Gameplay
-Here is an example of the game in progress, showing the player’s choice, the computer’s choice, and the current scores:
+## 🎮 Features
+- Play against the computer with Rock, Paper, or Scissors.
+- Scores for **You** and **Computer** are tracked.
+- Results are displayed clearly in the center (`You Win!`, `Computer Wins!`, `Tie`).
+- **Games Played** counter in the middle of the screen.
+- **Next Round** button to continue fairly (turn-based).
+- **Reset** button clears all scores and starts fresh.
+- Responsive design with clean UI.
+
+---
+
+
+### Game Start
   
-![Gameplay](./img/Gameplay.png)
+![Game Start](./img/Start1.png)
+
+---
+
+### Gameplay – You Win
+  
+![Gameplay](./img/Gameplay-You-Win.png)
+
+---
+
+### Gameplay – Computer Wins
+  
+![Gameplay](./img/Gameplay-Computer-Wins.png)
+
+---
+
+### Ready for Next Round
+  
+![Gameplay](./img/Ready-for-Next-Round.png)

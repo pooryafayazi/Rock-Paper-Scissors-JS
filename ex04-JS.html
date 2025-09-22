@@ -1,42 +1,63 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>ex04-JS</title>
     <link href="./styles.css" rel="stylesheet" type="text/css">
     <script src="https://cdn.jsdelivr.net/npm/js-cookie@3.0.5/dist/js.cookie.min.js"></script>
-    <script src="./ex04-JS.js"></script>
 </head>
 
 <body>
-    <div class="container">
-    <div id="you" class="result">
-        <div id="yourTitle">YOU:</div>
-        <img id="yourimg" src="./img/question.jpg">
-        <div id="yourcurrentChoise"></div>
-        <div id="yourScore"></div>
-    </div>
+    <main class="layout">
+        <section class="side you">
+            <h2>YOU</h2>
+            <img id="yourimg" src="./img/question.jpg" alt="Your choice" class="choice-img" />
+            <div id="yourcurrentChoise" class="caption"></div>
+            
+            <div class="btn-col">
+                <button class="buttonselect" id="btn-rock">Rock</button>
+                <button class="buttonselect" id="btn-paper">Paper</button>
+                <button class="buttonselect" id="btn-scissors">Scissors</button>
+            </div>
 
-    <div id="computer" class="result">
-        <div id="computerTitle">COMPUTER:</div>
-        <img id="computerimg" src="./img/question.jpg">
-        <div id="computercurrentChoise"></div>
-        <div id="computerScore"></div>
+            <div class="score-badge">
+                <span>Your Score</span>
+                <strong id="yourScore">0</strong>
+            </div>
+        </section>
+        
+        <section class="center">
+            <div class="scoreboard">
+                <div class="round">
+                    <span>Games Played</span>
+                    <strong id="turn">0</strong>
+                </div>
+                <div id="win" class="result-big">Ready</div>
+                <button id="next-round" class="next" disabled>Next Round</button>
+                <button id="reset" class="reset">Reset</button>
+            </div>
+        </section>
+        
+        <section class="side computer">
+            <h2>COMPUTER</h2>
+            <img id="computerimg" src="./img/question.jpg" alt="Computer choice" class="choice-img" />
+            <div id="computercurrentChoise" class="caption"></div>
+            
+            <div class="btn-col ghost">
+                <button class="buttonselect" disabled>Rock</button>
+                <button class="buttonselect" disabled>Paper</button>
+                <button class="buttonselect" disabled>Scissors</button>
+            </div>
 
-    </div>
-    </div>
-    
-    <div id="buttons">
-        <button class="buttonselect" id="rock" onclick="clickOnRock()">Rock</button>
-        <button class="buttonselect" id="paper" onclick="clickOnPaper()">Paper</button>
-        <button class="buttonselect" id="scissors" onclick="clickOnScissors()">Scissors</button>
-    </div>
-    <div id="win">WIN</div>
-    <div id="turn">Games Played: 0</div>
-    <div>
-        <button id="reset" onclick="reset()">RESET</button>
-    </div>
+            <div class="score-badge">
+                <span>Computer Score</span>
+                <strong id="computerScore">0</strong>
+            </div>
+        </section>
+    </main>
+    <script src="./ex04-JS.js"></script>
 
 </body>
 </html>
